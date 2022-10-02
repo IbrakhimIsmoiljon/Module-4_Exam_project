@@ -63,7 +63,7 @@ function addToCart() {
   $(".plus").addEventListener("click", () => {
     const amount = sneaker.amount++;
     // const totalCost = sneaker.total + 125 + "$";
-    $(".total-cost").innerHTML = costProduct * amount;
+    $(".total-cost").innerHTML = costProduct * amount + 125;
     $(".number").innerHTML = amount + 1;
     $(".cart-number").innerHTML = amount + 1;
   });
